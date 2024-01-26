@@ -85,12 +85,14 @@ const Footer = () => {
                     ))}
                     <div className="sm:pb-3.5 pb:pb-0 gap-3 col-span-1 md:col-span-2 lg:col-span-3 flex-colo">
                         <Link>
-                            <div className="text-subMain text-2xl md:text-5xl font-bold" >NEXTFLIT</div>
+                            <div className="text-subMain sm:h-32 sm:w-56 text-2xl md:text-5xl font-bold" >
+                                <img src="/logo.png" alt="logo" className='w-full h-full object-cover' />
+                            </div>
                         </Link>
                         <div className="text-border leading-7 flex flex-col gap-2">
                             <span className='text-sm md:text-lg hover:text-subMain transitions'> abcxyz blabla nextflit owned by Tommy Le</span>
                             <span className='text-sm md:text-lg hover:text-subMain transitions'> Tel: 0707171164</span>
-                            <span className='text-sm md:text-lg hover:text-subMain transitions'> email: thangteo1310@gmail.com</span>
+                            <span className='text-xs md:text-lg hover:text-subMain transitions'> email: thangteo1310@gmail.com</span>
                         </div>
                     </div>
                 </div>

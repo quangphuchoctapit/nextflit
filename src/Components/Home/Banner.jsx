@@ -28,10 +28,10 @@ const Banner = () => {
                                     <FlexMovieItems movie={movie} />
                                 </div>
                                 <div className="flex gap-5 items-center">
-                                    <Link to={`/movie/${movie.name}`} className='bg-subMain max-sm:text-sm max-sm:px-5 max-sm:p-3 hover:text-main transitions text-white px-8 py-3 rounded font-medium'>
+                                    <Link to={`/movie/${movie.name}`} className='bg-subMain max-sm:text-sm max-sm:px-5 max-sm:p-3 hover:text-white transitions text-white px-8 py-3 rounded font-medium'>
                                         Watch Now
                                     </Link>
-                                    <button className='px-6 py-3 bg-white bg-opacity-75 text-main max-sm:px-5 max-sm:p-3 hover:text-subMain transitions rounded'>
+                                    <button className='px-6 py-3 bg-gray-400 bg-opacity-75 max-sm:px-5 max-sm:p-3 hover:text-subMain text-white transitions rounded'>
                                         <MdFavorite size={20} />
                                     </button>
                                 </div>

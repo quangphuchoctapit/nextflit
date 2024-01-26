@@ -18,8 +18,20 @@ const TopRated = () => {
             <div className="mt-10">
                 <Swiper className=''
                     navigation={{ nextEl, prevEl }}
-                    slidesPerView={4}
-                    spaceBetween={40}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                        1280: {
+                            slidesPerView: 4,
+                            spaceBetween: 40,
+                        }
+                    }}
                     autoplay={true}
                     speed={1000}
                     loop={true}
@@ -27,7 +39,7 @@ const TopRated = () => {
                 >
                     {Movies.map((movie, index) => (
                         <SwiperSlide key={index}>
-                            <div className="p-2 h-32 xl:h-rate hovered border-border border relative rounded-lg overflow-hidden bg-dry">
+                            <div className="p-2 h-36 xs:h-48  xl:h-rate hovered border-border border relative rounded-lg overflow-hidden bg-dry">
                                 <img src={`/assets/images/movies/${movie.titleImage}`} alt={movie.title} className='w-full h-full bg-center object-cover' />
                                 <div className="px-4 absolute text-center  hoveres transitions bg-black xl:gap-6  bg-opacity-60 inset-0 flex items-center justify-center">
                                     <button className='transitions w-12 h-12 flex-colo transitions bg-gray-500 hover:bg-subMain text-white rounded-full'>
@@ -45,7 +57,6 @@ const TopRated = () => {
                 <div className='w-full flex-rows gap-6 pt-12 px-1'>
                     <button className={classNames} ref={(node) => setPrevEl(node)}><BsCaretLeftFill /></button>
                     <button className={classNames} ref={(node) => setNextEl(node)}><BsCaretRightFill /></button>
-
                 </div>
             </div>
         </div>

@@ -1,0 +1,22 @@
+export const CategoriesData = [
+    { title: 'Sci-fi' },
+    { title: 'Action' },
+    { title: 'Drama' },
+    { title: 'Comedy' },
+    { title: 'Horror' },
+    { title: 'Adventure' },
+    { title: 'Fantasy' },
+    { title: 'Thriller' },
+    { title: 'Romance' },
+    { title: 'Animation' },
+    { title: 'Mystery' },
+    { title: 'Documentary' },
+    { title: 'Family' },
+    { title: 'Crime' },
+    { title: 'Historical' },
+    { title: 'Science' },
+    { title: 'Superhero' },
+    { title: 'War' },
+    { title: 'Musical' },
+    { title: 'Wester' }
+]

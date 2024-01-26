@@ -11,12 +11,15 @@ const NavBar = () => {
         )
     }
     return (
-        <div className='bg-main shadow-md sticky top-0 z-20'>
+        <div className='bg-main shadow-md sticky top-0 z-20 pr-3'>
             <div className="container text-white mx-auto py-6 px-2 fo lg:grid gap-10 grid-cols-7 justify-between items-center">
                 {/* logo */}
                 <div className="col-span-1 lg:block hidden">
                     <Link to='/'>
-                        <span className='text-subMain text-5xl font-bold uppercase'>Home</span>
+                        <div className="">
+                            <img src={`/logo.png`} className='bg-main' alt="Logo" />
+                        </div>
+                        {/* <span className='text-subMain text-4xl font-bold uppercase'>NEXTFLIT</span> */}
                     </Link>
                 </div>
 
