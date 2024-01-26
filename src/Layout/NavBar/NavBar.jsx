@@ -27,7 +27,7 @@ const NavBar = () => {
                 <div className="col-span-3">
                     <form className='w-full text-md bg-dryGray rounded flex-btn gap-4'>
                         <button type='submit' className='bg-subMain w-12 flex-colo h-12 rounded text-white'><FaSearch /></button>
-                        <input type="text" placeholder='Search movie name from herer' className='font-medium placeholder:text-border text-md w-11/12 h-12 bg-transparent outline-none border-none text-black' />
+                        <input type="text" placeholder='Search movie name from here' className='font-medium placeholder:text-border text-md w-11/12 h-12 bg-transparent outline-none border-none text-black' />
                     </form>
                 </div>
 
